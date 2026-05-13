@@ -131,7 +131,40 @@
       margin-top: 40px;
       color: #5f5f5f;
     }
+    .tableWrapper {
+      overflow-x: auto;
+      margin-top: 25px;
+    }
+    .cronogramaTable {
+      width: 100%;
+      border-collapse: collapse;
+      background: #ffffff;
+      margin-top: 10px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
 
+    .cronogramaTable th,
+    .cronogramaTable td {
+      border: 1px solid #cbd5e1;
+      padding: 12px;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    .cronogramaTable th {
+      background: #cbc0b3;
+      color: #3f3f46;
+      font-weight: bold;
+    }
+
+    .cronogramaTable tr:nth-child(even) {
+      background: #f8f6f2;
+    }
+
+    .cronogramaTable tr:hover {
+      background: #eee8df;
+    }
     @media (max-width: 768px) {
       header h1 {
         font-size: 2.2rem;
@@ -207,6 +240,7 @@
       permitiendo administrar areas como finanzas, recursos humanos, inventario, ventas,
       manufactura y soporte desde una unica plataforma web.
     </p>
+    <a href="https://github.com/frappe/erpnext">ERPNext GitHub</a>
 
     <div class="cardContainer">
 
@@ -314,7 +348,7 @@
       <div class="card">
         <h3>Roles</h3>
         <p>
-          Participacion de Product Owner, Scrum Master y equipo de desarrollo.
+          Participacion de Scrum Master y el equipo.
         </p>
       </div>
 
@@ -410,8 +444,150 @@
     </div>
   </section>
 
+  <section id="cronograma">
+    <h2>Propuesta de Cronograma</h2>
+
+    <div class="tableWrapper">
+      <table class="cronogramaTable">
+        <thead>
+          <tr>
+            <th>Integrante</th>
+            <th>Rol</th>
+            <th>Responsabilidad en GitHub</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fernando</td>
+            <td>Scrum Master</td>
+            <td>Gestión de GitHub Projects (Sprints/Issues)</td>
+          </tr>
+          <tr>
+            <td>Cristhian</td>
+            <td>Documentador Senior</td>
+            <td>Configuración y despliegue de GitHub Pages</td>
+          </tr>
+          <tr>
+            <td>Edson</td>
+            <td>Arquitecto de Repo</td>
+            <td>Gestión de Fork, Ramas y Commits</td>
+          </tr>
+          <tr>
+            <td>Rodrigo</td>
+            <td>Analista de QA</td>
+            <td>Definición de DoD y Pruebas</td>
+          </tr>
+          <tr>
+            <td>Eduardo</td>
+            <td>Release Manager</td>
+            <td>Control de versiones y flujo de integración</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tableWrapper">
+      <table class="cronogramaTable">
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Fecha</th>
+            <th>Actividad Principal</th>
+            <th>Rol</th>
+            <th>Entregable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>13/05/2026</td>
+            <td>Kick-off: Fork del proyecto y setup de Project.</td>
+            <td>Arquitecto</td>
+            <td>Tablero Kanban activo</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>14/05/2026</td>
+            <td>Infraestructura: Setup de sitio en GitHub Pages.</td>
+            <td>Documentador</td>
+            <td>URL de documentación viva</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>15/05/2026</td>
+            <td>Estándares de ramas y mensajes.</td>
+            <td>Release Mgr</td>
+            <td>Guía de trabajo del equipo</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>16/05/2026</td>
+            <td>Análisis Finanzas: Cuentas y transacciones.</td>
+            <td>Scrum Master</td>
+            <td>Módulo Finanzas</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>17/05/2026</td>
+            <td>Revisión de Tablero: Ajuste de carga de trabajo.</td>
+            <td>Scrum Master</td>
+            <td>Backlog actualizado</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>18/05/2026</td>
+            <td>Análisis Inventarios: Almacenes y movimientos.</td>
+            <td>Documentador</td>
+            <td>Módulo Inventarios</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>19/05/2026</td>
+            <td>Análisis Ventas: Ciclo comercial y clientes.</td>
+            <td>Arquitecto</td>
+            <td>Módulo Ventas</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>20/05/2026</td>
+            <td>Análisis Compras: Proveedores y adquisiciones.</td>
+            <td>Analista QA</td>
+            <td>Módulo Compras</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>21/05/2026</td>
+            <td>Análisis Manufactura: Listas de materiales (BOM).</td>
+            <td>Release Mgr</td>
+            <td>Módulo Manufactura</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>22/05/2026</td>
+            <td>Análisis de Integración: Cruce de datos entre módulos.</td>
+            <td>Arquitecto</td>
+            <td>Diagrama de flujo integral</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>23/05/2026</td>
+            <td>Refinamiento: Planificación del siguiente Sprint.</td>
+            <td>Scrum Master</td>
+            <td>Lista de Issues prioritarias</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>24/05/2026</td>
+            <td>QA de Documentación: Revisión cruzada de Pages.</td>
+            <td>Analista QA</td>
+            <td>Reporte de calidad documental</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
   <footer>
-    <p>Presentacion informativa de ERPNext y Frappe Framework - 2026</p>
+    <p>Propuesta ERPNext - 2026</p>
   </footer>
 
 </body>
